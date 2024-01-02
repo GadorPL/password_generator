@@ -20,4 +20,11 @@ for n in range(nr_symbols):
 for n in range(nr_numbers):
     password += random.choice(numbers)
 
+random.shuffle(password)
 
+final_password = ""
+for i in password:
+    final_password += i
+
+
+print(f"Your password is: {final_password}")
